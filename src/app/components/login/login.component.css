@@ -1,0 +1,12 @@
+.login-card
+{
+    max-width:400px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+.card-header
+{
+    font-size: 30px;
+    background-image: linear-gradient(to right, lightblue , rgb(192, 255, 203));
+}

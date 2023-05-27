@@ -1,0 +1,22 @@
+<table matSort (matSortChange)="sortData($event)" class="table table-hover table-bordered">
+  <tr>
+    <th mat-sort-header="BoxId">BoxId</th>
+    <th style="width:400px" mat-sort-header="Part">Part</th>
+    <th mat-sort-header="Category" >Cate</th>
+    <th >BQty</th>
+    <th >WType</th>
+    <th mat-sort-header="DateIn">DateIn</th>
+    <th mat-sort-header="FinishDate">Date Finish</th>
+    <th mat-sort-header="AcptQty">AceptQty</th>
+    <th mat-sort-header="WeldQty">WeldQty</th>
+    <th mat-sort-header="Deptno">DeptID</th>
+    <th mat-sort-header="Machine">Machine</th>
+    <th >Sched</th>
+    <th>By</th>
+    <th>Insp</th> 
+  </tr>
+M</table>
+
+
+
+<button mat-stroked-button class="btn btn-default" [routerLink]="['/boxstart']">Start</button>

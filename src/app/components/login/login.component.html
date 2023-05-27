@@ -1,0 +1,37 @@
+
+<form [formGroup]="loginForm" class="login-container" >
+
+  <div *ngIf="!isLogin" class="alert alert-danger" role="alert" >
+    User email or password not match.. try again
+  </div>    
+
+
+  <!-- (ngSubmit)="loginUser()" -->
+  <div class="card login-card">
+  <div class="card-header">
+    Login...
+  </div>
+  <div class="card-body">
+    <mat-form-field>
+      <input matInput placeholder="Team" formControlName="team" required>
+    </mat-form-field> 
+    <mat-form-field>
+      <input matInput placeholder="UserID" formControlName="userid" required>
+    </mat-form-field> 
+     <mat-form-field >
+      <input matInput type="password" placeholder="Password" formControlName="password"  (keypress)="onKeypressEvent($event)" required>
+    </mat-form-field>
+  </div>
+  <div class="card-footer text-right">
+  <button mat-raised-button class="btn btn-outline-danger" (click)="Cancle()">Cancle</button>
+    <button mat-raised-button class="btn btn-outline-primary" (click)="loginUser()">Ok</button>
+  
+  </div>
+  </div>
+  </form>
+  <div *ngIf="submitted">
+    <p *ngIf="!authService.loggedIn() "   id="onError">Invalid</p>
+  </div>
+  
+  
+  

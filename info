@@ -1,0 +1,51 @@
+ng new Weld009
+
+ng g c components/login
+ng g c components/admin
+
+ng g s service/auth
+ng g guard service/auth
+
+
+npm install
++ @angular/animations@6.1.10
++ @angular/cdk@7.0.3
++ @angular/material@7.0.3
++ hammerjs@2.0.8
++ jquery
++ bootstrap
+ --save
+
+****** bootstrap link and jquery in angular.json
+
+add
+
+cretae folder server
+npm init --yes
+npm install express body-parser --save
+npm install cors --save 
+npm install jsonwebtoken --save
+
+
+components
+ng g c 
++ login
++ register
++  dashboard
+
+
+
+add in style.css
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+ng g guard service/auth
+ng g s service/token-interceptor
+
+
+
+for hosting from local computer
+
+ng serve --host 192.168.1.32
+nodemon server 192.168.1.32
+
+npm install angular-user-idle
